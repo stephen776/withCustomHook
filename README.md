@@ -8,7 +8,7 @@ The idea is that we just utilize hooks in an idiomatic way and still get reasona
 ### Installation
 
 ```
-  yarn add withHook
+  yarn add with-custom-hook
 ```
 
 ### Example Usage
