@@ -1,0 +1,13 @@
+{
+  "name": "withHook",
+  "version": "0.0.1",
+  "description": "React HOC that passes the output of a custom hook as props to a presentational component",
+  "main": "index.js",
+  "repository": "https://github.com/stephen776/withHook",
+  "author": "Stephen Jacobs",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "typescript": "^3.5.2"
+  }
+}
