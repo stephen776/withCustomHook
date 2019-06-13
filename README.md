@@ -1,6 +1,7 @@
 ## Overview
 
-React HOC that passes the output of a custom hook as props to a presentational component
+React HOC that passes the output of a custom hook as props to a presentational component.
+The idea is that we just utilize hooks in an idiomatic way and still get reasonable separation of concerns between stateful logic and UI
 
 ### Installation
 
