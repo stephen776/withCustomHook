@@ -1,8 +1,18 @@
+## Overview
+
 React HOC that passes the output of a custom hook as props to a presentational component
+
+### Installation
+
+```
+  yarn add withHook
+```
 
 ### Example Usage
 
 ```
+  import {withHook} from 'withHook';
+
   // Our custom hook. The returned values will be passed as props to our wrapped Presentational Component
   function useCount(initialValue?: number) {
     const [count, setCount] = React.useState(initialValue || 0);
