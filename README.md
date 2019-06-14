@@ -12,7 +12,7 @@ The idea is that we just utilize hooks in an idiomatic way and still get reasona
 ### Example Usage
 
 ```
-  import withHook from 'withHook';
+  import withHook from 'with-custom-hook';
 
   // Our custom hook. The returned values will be passed as props to our wrapped Presentational Component
   function useCount(initialValue?: number) {
