@@ -9,6 +9,9 @@ function getParamNames(func) {
   return result;
 }
 
-export function mapPropsToParams(props: any[], hook: (...args: any[]) => any) {
+export function mapPropsToParams<TProps>(
+  props: TProps,
+  hook: (...args: any[]) => any,
+) {
   return getParamNames(hook).map(name => props[name] || undefined);
 }
