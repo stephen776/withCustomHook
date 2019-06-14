@@ -21,6 +21,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var React = __importStar(require("react"));
 var helpers_1 = require("./helpers");
 exports.withCustomHook = function (useCustomHook) { return function (WrappedComponent) { return function (props) {
-    var injectedProps = useCustomHook(helpers_1.mapPropsToParams(props, useCustomHook));
+    var injectedProps = useCustomHook.apply(void 0, helpers_1.mapPropsToParams(props, useCustomHook));
     return React.createElement(WrappedComponent, __assign({}, injectedProps, props));
 }; }; };

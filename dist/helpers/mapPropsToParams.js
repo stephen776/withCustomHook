@@ -2,8 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var STRIP_COMMENTS = /((\/\/.*$)|(\/\*[\s\S]*?\*\/))/gm;
 var ARGUMENT_NAMES = /([^\s,]+)/g;
-function getParamNames(func) {
-    var fnStr = func.toString().replace(STRIP_COMMENTS, '');
+function getParamNames(hook) {
+    var fnStr = hook.toString().replace(STRIP_COMMENTS, '');
     var result = fnStr
         .slice(fnStr.indexOf('(') + 1, fnStr.indexOf(')'))
         .match(ARGUMENT_NAMES);

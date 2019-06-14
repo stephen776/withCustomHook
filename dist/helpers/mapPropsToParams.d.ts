@@ -1,5 +1,4 @@
-interface IDictionary<TValue> {
-    [id: string]: TValue;
-}
-export declare function mapPropsToParams<TProps>(props: IDictionary<TProps>, hook: (...args: any[]) => any): (TProps | undefined)[];
-export {};
+import { CustomHook } from '../types';
+export declare function mapPropsToParams<TParamProps extends {
+    [key: string]: any;
+}, TParams, TResult>(props: TParamProps, hook: CustomHook<TParams, TResult>): any[];

@@ -12,14 +12,12 @@ interface HookHOC<TInjectedProps, TParamProps> {
 export const withCustomHook = <TParams, TInjectedProps, TParamProps>(
   useCustomHook: CustomHook<TParams, TInjectedProps>,
 ): HookHOC<TInjectedProps, TParamProps> => WrappedComponent => props => {
-  // const injectedProps = useCustomHook(
-  //   mapPropsToParams<TParamProps, TParams, TInjectedProps>(
-  //     props,
-  //     useCustomHook,
-  //   ),
-  // );
-
-  const injectedProps = useCustomHook(/* TODO: ! */);
+  const injectedProps = useCustomHook(
+    ...mapPropsToParams<TParamProps, TParams, TInjectedProps>(
+      props,
+      useCustomHook,
+    ),
+  );
 
   return <WrappedComponent {...injectedProps} {...props} />;
 };
