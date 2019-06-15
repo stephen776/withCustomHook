@@ -3,7 +3,7 @@
   "version": "0.0.9",
   "description": "React HOC that passes the output of a custom hook as props to a presentational component",
   "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "typings": "dist/index.d.js",
   "repository": "https://github.com/stephen776/withHook",
   "author": "Stephen Jacobs",
   "license": "MIT",
