@@ -1,6 +1,6 @@
 {
   "name": "with-custom-hook",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "React HOC that passes the output of a custom hook as props to a presentational component",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
