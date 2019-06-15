@@ -11,12 +11,13 @@
     "build": "tsc",
     "prepublish": "npm run build"
   },
-  "dependencies": {
+  "devDependencies": {
+    "@types/react": "^16.8.20",
+    "prettier": "^1.18.2",
     "react": "^16.8.6",
     "typescript": "^3.5.2"
   },
-  "devDependencies": {
-    "@types/react": "^16.8.20",
-    "prettier": "^1.18.2"
+  "peerDependencies": {
+    "react": ">= 16.8.x"
   }
 }
