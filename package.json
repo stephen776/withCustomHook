@@ -11,6 +11,9 @@
     "build": "tsc",
     "prepublish": "npm run build"
   },
+  "files": [
+    "dist/**/*"
+  ],
   "devDependencies": {
     "@types/react": "^16.8.20",
     "prettier": "^1.18.2",
