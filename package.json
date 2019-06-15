@@ -3,13 +3,13 @@
   "version": "0.0.10",
   "description": "React HOC that passes the output of a custom hook as props to a presentational component",
   "main": "dist/index.js",
-  "types": "dist/index.d.js",
-  "repository": "https://github.com/stephen776/withHook",
+  "types": "dist/index.d.ts",
+  "repository": "https://github.com/stephen776/witCustomhHook",
   "author": "Stephen Jacobs",
   "license": "MIT",
   "scripts": {
-    "compile": "tsc",
-    "prepare": "npm run compile"
+    "build": "tsc",
+    "prepublish": "npm run build"
   },
   "dependencies": {
     "react": "^16.8.6",
