@@ -3,12 +3,19 @@
     "target": "es5",
     "module": "commonjs",
     "lib": ["es2017", "es7", "es6", "dom"],
+    "jsx": "react",
     "declaration": true,
     "outDir": "dist",
     "strict": true,
-    "esModuleInterop": true,
-    "jsx": "react",
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "noStrictGenericChecks": true,
+    "esModuleInterop": true
   },
   "exclude": ["node_modules", "dist"]
 }
