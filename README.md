@@ -6,7 +6,7 @@ The idea is that we can utilize hooks in an idiomatic way and still get reasonab
 `withCustomHook` is written in Typescript so you will get type inference out of the box for props passed to the resutling HOC
 
 NOTE: There is currently a limitation on how parameters must be passed to the custom hooked passed into the HOC. 
-The hook must accept a single arugment in the form of an object. Future versions will hopefill lift this constraint and provide an even more flexible API but for now, passing a config object is a pretty standard JS/TS practice.
+The hook must accept a single arugment in the form of an object. Future versions will hopefully lift this constraint and provide an even more flexible API but for now, passing a config object is a pretty standard JS/TS practice.
 
 ### Installation
 
