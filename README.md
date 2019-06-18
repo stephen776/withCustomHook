@@ -19,9 +19,7 @@ The hook must accept a single arugment in the form of an object. Future versions
 ```
   import withHook from 'with-custom-hook';
 
-  /*
-   * Our custom hook. The returned values will be passed as props to our wrapped Presentational Component
-  **/
+  // Our custom hook. The returned values will be passed as props to our wrapped Presentational Component
   interface HookConfig {
     initialValue?: number
   }
