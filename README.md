@@ -1,3 +1,6 @@
+## DEPRECATED
+This was just a POC during the early days of react hooks and never used in production.
+
 ## Overview
 
 React HOC that passes the output of a custom hook as props to a presentational component.
